@@ -21,3 +21,10 @@ B_12 = (0.1*(P_L2+P_L1))/(sin(15*pi/180)*u^2);
 a = G_11*E1^2/tau
 b = B_12*E1^2/tau
 c = 1/tau
+
+
+syms P_M1 u_sec Delta;
+
+a = -K_p1*P_M1 + u_sec + K_P2*G_22*abs(E_2)^2 - K_P2*B_12*abs(E_1)*abs(E_2)*sin(Delta)
+
+b = -(P_M1*G_11*abs(E_1)^2)/tau + (P_M1*B_12*abs(E_1)*abs(E_2)*sin(Delta))/tau
