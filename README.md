@@ -1,14 +1,8 @@
 # ELDI2002_project
 
-So you're telling me that Matlab can edit and *format* md-files? This is
-the coolest shit ever.
+Readme to keep track of changes made to the project and follow progress.
+Useful for reference if setbacks occur or for fleshing out report.
 
-### This is a title
+### Changelog
 
-##### This is a smaller title
-
-**This is bold**
-
-*this is italics*
-
-This is working. Yay!
+- Added a second equation in the control block in order to find equilibria for other omega_1 than omega_star.

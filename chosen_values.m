@@ -19,8 +19,11 @@ B_12 = (0.1*(P_L2+P_L1))/(sin(15*pi/180)*u^2);
 delta_0 = 0;
 P_M1_0 = 0;
 omega_1 = 2*f*pi; %Desired rotational frequency
-sin_delta = (omega_1-omega_star+K_P2*G_22*abs(E2)^2)/(K_P2*B_12*abs(E1)*abs(E2));
-delta = asin((omega_1-omega_star+K_P2*G_22*abs(E2)^2)/(K_P2*B_12*abs(E2)*abs(E1)));
+%sin_delta = (omega_1-omega_star+K_P2*G_22*abs(E2)^2)/(K_P2*B_12*abs(E1)*abs(E2));
+%probably supposed to be found through omega_1 in control block
+%delta = asin((omega_1-omega_star+K_P2*G_22*abs(E2)^2)/(K_P2*B_12*abs(E2)*abs(E1)));
+
+P1 = G_11*abs(E1)^2+B_12*E1*E2*sin(delta); %just checking
 
 a = G_11*E1^2/tau;
 b = B_12*E1^2/tau;
