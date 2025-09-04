@@ -16,8 +16,8 @@ P_L2 = 0.3*P_b;
 G_11 = P_L1/u^2;
 G_22 = P_L2/u^2;
 B_12 = (0.1*(P_L2+P_L1))/(sin(15*pi/180)*u^2);
-delta_0 = 0;
-P_M1_0 = 0;
+delta_0 = 9.68*10^(-1);
+P_M1_0 = 1.774*10^5;
 omega_1 = 2*f*pi; %Desired rotational frequency
 %sin_delta = (omega_1-omega_star+K_P2*G_22*abs(E2)^2)/(K_P2*B_12*abs(E1)*abs(E2));
 %probably supposed to be found through omega_1 in control block
