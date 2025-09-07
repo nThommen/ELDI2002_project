@@ -9,6 +9,7 @@ Useful for reference if setbacks occur or for fleshing out report.
 - Adjusted K_P2 to 100 times its original size to maintain sound sin(delta). System now stable for f other than 59 and 60.
 - Verified system stability for f = {60 +- 5%}
 - Added Scope to compare 2*pi*f_1 to omega_1 at output of system block.
+- Added parameter uncertainty in physical model, but no instability yet.
 
 
 ### Next steps
