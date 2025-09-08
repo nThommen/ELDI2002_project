@@ -38,4 +38,4 @@ c = 1/tau;
 
 
 %P-controller
-Kp = 0.00001;
+Kp = 0.0001;
