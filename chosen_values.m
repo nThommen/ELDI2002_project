@@ -23,10 +23,6 @@ omega_1 = 2*f*pi; %Desired rotational frequency
 %probably supposed to be found through omega_1 in control block
 %delta = asin((omega_1-omega_star+K_P2*G_22*abs(E2)^2)/(K_P2*B_12*abs(E2)*abs(E1)));
 
-a = G_11*E1^2/tau;
-b = B_12*E1^2/tau;
-c = 1/tau;
-
 
 
 % syms P_M1 u_sec Delta;
